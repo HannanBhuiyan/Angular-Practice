@@ -1,0 +1,18 @@
+<ul>
+  <li>Name</li>
+</ul> 
+
+<app-child
+  [getAge]="'22'" 
+  [getAddress]="'Dhaka'" 
+  [getName]="'Hannan'"
+  [getlon] = "'30.22'"
+  [getDepartment] = "'Computer science and eng'"
+
+ 
+ (messageEvent)="receaveMessage($event)"
+ 
+ (notificationEvent)="recevMINUS($event)"
+ ></app-child>
+ 
+ 

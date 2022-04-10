@@ -1,0 +1,20 @@
+<div class="card">
+  <h2>{{ title }}</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga 
+    consectetur tenetur deserunt eaque autem, magni soluta ipsa assumenda eum voluptas.</p>
+</div>
+
+<ng-content [question]></ng-content>
+<ng-content [answer] ></ng-content>
+
+<ng-content [mynane] ></ng-content>
+
+
+<button (click)="toggleText($event)" >show Text</button>
+
+{{ showText }}
+
+
+<button (click)="toggleClick()" >Toggle</button>
+<h2 *ngIf="showHeading" >hkjkjh</h2>
+

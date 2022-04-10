@@ -1,0 +1,10 @@
+.changeColor {
+  color: red;
+}
+.paragraph {
+  background-attachment: fixed;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+}

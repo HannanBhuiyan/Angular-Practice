@@ -1,0 +1,54 @@
+
+
+
+
+<h2 [class.paragraph] = "para" >this is paragraph</h2>
+
+
+
+
+
+<button [ngStyle]="{'background-color': color}" (click)="getName()"  >{{ signuptext }}</button>
+<br>
+<br>
+
+
+
+<h2 [class.changeColor]="colorVariable">this is sub title</h2>
+
+
+
+
+<input type="text" #name (keyup.enter)="myEvent(name.value)" >
+<br>
+<br>
+<input type="text" #email (keydown)="myEvent(email.value)" >
+<br>
+<br>
+<input type="text" (blur)="myEvent('sdfasdfsd')" >
+<br>
+<br>
+
+<h4 style="background-color: red;" (mouseover)="myEvent('sdfsadf')" >text</h4>
+<h4 style="background-color: red;" (mouseout)="myEvent('out')" >Out</h4>
+<br>
+<br>
+
+<h1>-----------------</h1>
+ 
+<!-- <input placeholder="Enter name" type="text" #mynane >
+<input placeholder="Enter age" type="text" #myage >
+<button (click)="getValue()" >Get Value</button>
+
+<h4>Name : {{ currentName }}</h4>
+<h4>Age : {{ currentVal }}</h4>
+
+
+<button [disabled]="isDisabled" (click)="increment()" >{{ addText }}</button>
+<button [disabled]="isDisabledDecrement" (click)="decrement()" >{{ minusText }}</button>
+
+<span>{{ count }}</span> -->
+
+
+
+
