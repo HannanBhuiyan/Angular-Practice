@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
+
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -76,19 +78,32 @@ export class SignupComponent implements OnInit {
   colorVariable = false
   para = false
  
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    if (document.body.scrollTop > 10 ||     
-    document.documentElement.scrollTop > 10) {
-      this.colorVariable = true
-      this.para = true
-    }else {
-      this.colorVariable = false
-      this.para = false
-    }
-  }
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   if (document.body.scrollTop > 10 ||     
+  //   document.documentElement.scrollTop > 10) {
+  //     this.colorVariable = true
+  //     this.para = true
+  //   }else {
+  //     this.colorVariable = false
+  //     this.para = false
+  //   }
+  // }
 
 
+  ngOneImage : any = "../../assets/images/nf1.jpg"
+  ngTwoImage : any = "../../assets/images/nf2.jpg"
+  ngThreeImage : any = "../../assets/images/nf3.jpg"
+  ngFourImage : any = "../../assets/images/nf4.jpg"
+
+
+  show = "blue"
+
+
+  colorr="golden"
+
+
+  items = [1,2,3,4,5,6,7,9]
 
 
 }

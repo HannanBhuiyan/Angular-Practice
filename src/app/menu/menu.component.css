@@ -1,0 +1,47 @@
+ 
+.header_section {
+  background-color: #000;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.nemu_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  
+}
+.header_menu {
+
+}
+
+.header_menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header_menu ul li {
+  list-style-type: none;
+}
+
+.header_menu ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0px 20px 58px;
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+}
+.menu_active {
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}

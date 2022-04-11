@@ -1,0 +1,39 @@
+
+<div style="margin-top: 40px;">
+  <form #simpleForm="ngForm" (ngSubmit)="getVlues(simpleForm.value)">
+    <input type="text" ngModel name="name" placeholder="Enter name">
+    <br>
+    <br>
+    <input type="text" ngModel name="email" placeholder="Enter Email">
+    <br>
+    <br>
+    <input type="password" ngModel name="pass" placeholder="Enter Password">
+    <br>
+    <br>
+    <button>Submit</button>
+  </form>
+
+  <br>
+  <br>
+  <br>
+
+
+  <h2 [style.color]="'green'">Data </h2>
+  <h4 [style.color]="'yellow'" >Title </h4>
+
+  <h2 [style.color]="err?redcolor:greencolor">error</h2>
+
+  <button (click)="changeColor()" >change color</button>
+
+
+  <p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+  </p>
+   
+ 
+
+
+
+</div>

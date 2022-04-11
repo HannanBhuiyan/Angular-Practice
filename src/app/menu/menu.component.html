@@ -1,0 +1,19 @@
+<div class="header_section" [class.menu_active] = "menuScrollColor">
+ <div class="nemu_area">
+  <div class="logo"  *ngIf="logoShow else logonai" >
+    <a href="">{{ logo }}</a>
+  </div>
+  <ng-template #logonai>
+    <a style="color: #fff;" href="">logo nai</a>
+  </ng-template>
+  <div class="header_menu">
+    <ul>
+      <li *ngFor="let menu of menus" ><a href="">{{ menu.name }}</a></li>
+    </ul>
+  </div>
+ </div>
+</div>
+
+
+
+ 
